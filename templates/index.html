@@ -87,9 +87,11 @@
                     <div class="col-md-4 text-center">
                         <article class="service animated fadeInUp">
                             <div class="service-header">
-                                <h4><a style="text-decoration: none;color:white;cursor: pointer" data-toggle="modal" data-target="#modal{{i.id}}">{{ i.bookName }}</a></h4>
+                                <h4><a style="text-decoration: none;color:white;cursor: pointer" data-toggle="modal"
+                                       data-target="#modal{{ i.id }}">{{ i.bookName }}</a></h4>
                             </div>
-                            <div class="img-rounded" style="background: url('{{ i.path }}')">
+                            <div class="img-rounded">
+                                <img src="{{ i.path }}" height="100" width="200">
                             </div>
                             <div class="service-text">
                                 <p style="color:white">
@@ -101,7 +103,7 @@
 
 
                     <!-- Modal -->
-                    <div class="modal fade" id="modal{{i.id}}" tabindex="-1" role="dialog"
+                    <div class="modal fade" id="modal{{ i.id }}" tabindex="-1" role="dialog"
                          aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
